@@ -1,0 +1,130 @@
+/* basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* page background */
+body {
+  min-height: 100vh;
+  background: radial-gradient(
+    circle at top left,
+    #111,
+    #000 60%
+  );
+  color: #f5efe6;
+  display: flex;
+  align-items: center;
+}
+
+/* main hero section */
+#about {
+  max-width: 720px;
+  padding-left: 10%;
+}
+
+/* small intro line */
+#intro {
+  font-size: 1rem;
+  color: #d6cbbd;
+  margin-bottom: 0.75rem;
+  min-height: 1.4em;
+}
+
+/* wrapper keeps headline from jumping */
+.headline-wrapper {
+  position: relative;
+  width: 720px;
+  min-height: 2.8em;
+  margin-bottom: 0.5rem;
+}
+
+/* main headline */
+#headline {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #f5efe6;
+  position: relative;
+  z-index: 2;
+  min-height: 2.8em;
+}
+
+/* description text */
+#description {
+  font-size: 1.05rem;
+  line-height: 1.4;
+  color: #cfc3b3;
+  max-width: 600px;
+  min-height: 2.8em;
+}
+
+/* hide text until typing starts */
+#intro,
+#headline,
+#description {
+  visibility: hidden;
+  display: block;
+}
+
+/* blinking cursor */
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background-color: #f5efe6;
+  margin-left: 4px;
+  vertical-align: bottom;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+/* decorative gif next to headline */
+.headline-gif {
+  position: absolute;
+  right: -450px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 350px;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+/* mobile tweaks */
+@media (max-width: 768px) {
+  body {
+    align-items: flex-start;
+  }
+
+  #about {
+    padding: 4rem 1.5rem;
+  }
+
+  .headline-wrapper {
+    width: 100%;
+    min-height: auto;
+  }
+
+  #headline {
+    font-size: 2.2rem;
+    min-height: auto;
+  }
+
+  #description {
+    min-height: auto;
+  }
+
+  .headline-gif {
+    display: none;
+  }
+}
