@@ -14,10 +14,11 @@
     </head>
     <body>
        <section id="about">
+        <span class="terminal-breadcrumb">~/bernard/home</span>
         <p id="intro">Hi, im Bernard.</p>
 
         <div class="headline-wrapper">
-            <h2 id="headline">I’m a Software Developer and solutions architect.</h2>
+            <h2 id="headline">I’m a Software Developer and Solutions Architect.</h2>
 
             <img
                 src="photos/sabertooth.gif"
@@ -28,6 +29,18 @@
             <p id="description">
                 I'm a developer focused on building clean, functional web and mobile applications using JavaScript, React, and React Native.
             </p>
+<!--Command Palette-->
+        <div id="command-palette" class="palette hidden" aria-hidden="true">
+            <input
+                id="command-input"
+                type="text"
+                placeholder="Search..."
+                autocomplete="off"
+            />
+            <ul id="command-results"></ul>
+        </div>
+<!--Hint-->
+        <p class="palette-hint">Press ⌘K to navigate</p>
         
        </section>
         <script src="script.js"></script>
