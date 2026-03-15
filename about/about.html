@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About | Bernard</title>
+        <meta name="description" content="Software Developer and Artist Portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/about/about.css">
+    </head>
+    <body>
+        <nav class="top-nav">
+            <button id="nav-trigger">[ menu ]</button>
+        </nav>
+
+        <div id="split-screen">
+            <div class="half left">
+                <div class="info-wrapper">
+                    <h1>¿Qué onda?</h1>
+                    <p class="about">
+                        I’m a software developer and artist... [your great text here]
+                    </p>
+                    <div class="contact-details">
+                        <p><strong>Email:</strong> bcarter8304@gmail.com</p>
+                        <p><strong>Location:</strong> Philadelphia, PA</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="half right">
+                <h1>Message Me</h1>
+                <form action="https://formspree.io/f/mjgaedep" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="_replyto" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="What's on your mind?" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div> <div id="nav-overlay" class="hidden">
+            <div class="nav-content">
+                <nav class="overlay-menu">
+                    <a href="/index.html"><span class="num">01</span> Home</a>
+                    <a href="/about/about.html"><span class="num">02</span> About</a>
+                    <a href=""><span class="num">03</span> Work</a>
+                </nav>
+                <div class="overlay-footer">
+                    <div class="social-links">
+                        <a href="https://github.com/yourusername">GitHub</a>
+                        <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
+                    </div>
+                    <p class="controls">Press <kbd>ESC</kbd> to exit • <kbd>⌘K</kbd> to toggle</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="/about/about.js"></script>
+    </body>
+</html>

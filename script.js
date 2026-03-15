@@ -39,7 +39,7 @@ function initCommandPalette() {
       label: "About Me",
       keywords: ["about", "bio", "who"], 
       action: () => { 
-        window.location.href = "about.html";
+        window.location.href = "/about/about.html";
       }
     },
     {
@@ -135,4 +135,3 @@ window.addEventListener("DOMContentLoaded", () => {
 
   initCommandPalette();
 });
-
